@@ -13,15 +13,22 @@ class Restorent {
         this.table="";
 
     }
-    iItemList =(input)=> {
-        // console.log("Available foods\n**********************");
-        // console.log(this.order_item);
-        // var condition;
-       // while (condition != "false") {
-      //      var input1 = prompt("Enter the food :");
-            this.ordered_list.push(input);
-         
-       // }
+    iItemList =()=> {
+        console.log("Available foods\n**********************");
+         console.log(this.order_item);
+         var condition;
+         while (condition != "false") {
+             var input1 = prompt("Enter the food :");
+             this.ordered_list.push(input1);
+             var input2 = prompt("You want add more foods(yes/no) : ");
+             if (input2 == "yes") {
+                 condition = "true";
+             }
+             else {
+                 console.log(this.ordered_list+"\n*******************************")
+                 condition = "false";
+             }
+         }
         return this.ordered_list;
     }
     billling=(bill,order_item,ordered_list)=> {
