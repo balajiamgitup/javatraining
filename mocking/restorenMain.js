@@ -136,3 +136,6 @@ catch (e) {
 }
 
 module.exports = { main };
+// var bill={
+//      billing:  (bill,order,list) => restorentmain.obj.billling(restorentmain.obj.bill,restorentmain.obj.order_item,restorentmain.obj.ordered_list),
+// };
